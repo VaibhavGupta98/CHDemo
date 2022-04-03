@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.ch.project.base.BaseClass;
 import com.ch.project.pages.AmazonHomePage;
 import com.ch.project.pages.AmazonResultsPage;
+import com.ch.project.utils.ConfigFileReader;
 
 
 public class WebAutomationTest extends BaseClass {
@@ -19,7 +20,9 @@ public class WebAutomationTest extends BaseClass {
 	public void Test1() throws InterruptedException {
 		this.driver = baseDriver;
 		
-		driver.get("https://amazon.in");
+		//ConfigFileReader config = new ConfigFileReader();
+		
+		driver.get(config.getUrl());
 		
 		AmazonHomePage homePage = new AmazonHomePage(driver);
 		

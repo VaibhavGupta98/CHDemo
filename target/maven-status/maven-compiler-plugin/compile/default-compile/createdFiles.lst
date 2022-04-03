@@ -1,2 +1,10 @@
+com\ch\project\base\BaseClass.class
+com\ch\project\APIEndpoints\EndPoints.class
+com\ch\project\models\ResponseJSONClass.class
+com\ch\project\helpers\APIHelper.class
+com\ch\project\helpers\UIHelper.class
+com\ch\project\pages\AmazonResultsPage.class
+com\ch\project\pages\AmazonHomePage.class
+com\ch\project\utils\ConfigFileReader.class
 tests\APIAutomationTest.class
 tests\WebAutomationTest.class

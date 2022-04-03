@@ -7,4 +7,14 @@
       <class name="tests.APIAutomationTest"/>
     </classes>
   </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="tests.WebAutomationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- tests.WebAutomationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,20 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-03T09:35:41Z" name="Default suite" finished-at="2022-04-03T09:35:58Z" duration-ms="17495">
+  <suite started-at="2022-04-03T12:05:39Z" name="Default suite" finished-at="2022-04-03T12:05:58Z" duration-ms="18988">
     <groups>
     </groups>
-    <test started-at="2022-04-03T09:35:41Z" name="Default test" finished-at="2022-04-03T09:35:58Z" duration-ms="17495">
+    <test started-at="2022-04-03T12:05:39Z" name="Default test" finished-at="2022-04-03T12:05:58Z" duration-ms="18988">
       <class name="tests.WebAutomationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WebAutomationTest@291a7e3c]" started-at="2022-04-03T15:05:41Z" name="setUp" finished-at="2022-04-03T15:05:43Z" duration-ms="2251" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WebAutomationTest@1046d517]" started-at="2022-04-03T17:35:39Z" name="setUp" finished-at="2022-04-03T17:35:41Z" duration-ms="2090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Test1()[pri:0, instance:tests.WebAutomationTest@291a7e3c]" started-at="2022-04-03T15:05:43Z" name="Test1" finished-at="2022-04-03T15:05:58Z" duration-ms="14902" status="PASS">
+        <test-method signature="Test1()[pri:0, instance:tests.WebAutomationTest@1046d517]" started-at="2022-04-03T17:35:41Z" name="Test1" finished-at="2022-04-03T17:35:58Z" duration-ms="16617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WebAutomationTest@291a7e3c]" started-at="2022-04-03T15:05:58Z" name="tearDown" finished-at="2022-04-03T15:05:58Z" duration-ms="320" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WebAutomationTest@1046d517]" started-at="2022-04-03T17:35:58Z" name="tearDown" finished-at="2022-04-03T17:35:58Z" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
