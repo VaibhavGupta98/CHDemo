@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 2.666 s <<< FAILURE! - in TestSuite
-tests.WebAutomationTest.setUp  Time elapsed: 2.549 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-VVR08CM', ip: '192.168.29.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-dev-shm-usage], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-dev-shm-usage], extensions: []}}}]
-Capabilities {}
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:4444
-Caused by: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:4444
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:4444
-Caused by: java.net.ConnectException: Connection refused: no further information
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.806 s - in TestSuite

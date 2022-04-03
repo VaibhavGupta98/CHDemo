@@ -17,10 +17,11 @@ public class WebAutomationTest extends BaseClass {
 	WebDriver driver;
 	
 	@Test
-	public void Test1() throws InterruptedException {
-		this.driver = baseDriver;
+	public void UI_Test() throws InterruptedException {
 		
-		//ConfigFileReader config = new ConfigFileReader();
+		System.out.println("------------------ UI Test Started -----------------");
+		
+		this.driver = baseDriver;
 		
 		driver.get(config.getUrl());
 		
@@ -42,9 +43,9 @@ public class WebAutomationTest extends BaseClass {
 		
 		String currentWindow = driver.getWindowHandle();		
 		
-		Set<String> set = driver.getWindowHandles();
+		Set<String> allWindows = driver.getWindowHandles();
 		
-		for(String window: set) {
+		for(String window: allWindows) {
 			if(!window.equals(currentWindow)) {
 				driver.switchTo().window(window);
 			}
@@ -52,7 +53,7 @@ public class WebAutomationTest extends BaseClass {
 		
 		resultsPage.printItemDescription();
 	
-	
+		System.out.println("------------------ UI Test Completed -----------------");
 	}
 	
 }
