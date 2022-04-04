@@ -1,0 +1,68 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "WebAutomationTest",
+      "children" : [ {
+        "name" : "UI_Test",
+        "uid" : "315e38cca3753e65",
+        "parentUid" : "3b7cc8dee565bb113a61ce11ff2a7b84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082818258,
+          "stop" : 1649082833649,
+          "duration" : 15391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3b7cc8dee565bb113a61ce11ff2a7b84"
+    }, {
+      "name" : "APIAutomationTest",
+      "children" : [ {
+        "name" : "API_Test",
+        "uid" : "cef2e4fb3dfcb71f",
+        "parentUid" : "09d944ebe511f12bac1e855bd355d264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082834141,
+          "stop" : 1649082838031,
+          "duration" : 3890
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "admin", "admin" ]
+      }, {
+        "name" : "API_Test",
+        "uid" : "bbab0973b7afe47",
+        "parentUid" : "09d944ebe511f12bac1e855bd355d264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082838037,
+          "stop" : 1649082838470,
+          "duration" : 433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "ronaldo", "player" ]
+      } ],
+      "uid" : "09d944ebe511f12bac1e855bd355d264"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ]
+}

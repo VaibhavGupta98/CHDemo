@@ -1,35 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="0" failed="2" skipped="0">
+<testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-03T17:22:29Z" name="Default suite" finished-at="2022-04-03T17:22:33Z" duration-ms="4192">
+  <suite started-at="2022-04-04T14:09:20Z" name="Default suite" finished-at="2022-04-04T14:09:30Z" duration-ms="10041">
     <groups>
     </groups>
-    <test started-at="2022-04-03T17:22:29Z" name="Default test" finished-at="2022-04-03T17:22:33Z" duration-ms="4192">
-      <class name="tests.APIAutomationTest">
-        <test-method signature="Test2(java.lang.String, java.lang.String)[pri:0, instance:tests.APIAutomationTest@7efaad5a]" started-at="2022-04-03T22:52:29Z" name="Test2" data-provider="userData" finished-at="2022-04-03T22:52:33Z" duration-ms="3724" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+    <test started-at="2022-04-04T14:09:20Z" name="Default test" finished-at="2022-04-04T14:09:30Z" duration-ms="10041">
+      <class name="tests.WebAutomationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WebAutomationTest@341672e]" started-at="2022-04-04T19:39:20Z" name="setUp" finished-at="2022-04-04T19:39:23Z" duration-ms="3749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UI_Test()[pri:0, instance:tests.WebAutomationTest@341672e]" started-at="2022-04-04T19:39:23Z" name="UI_Test" finished-at="2022-04-04T19:39:29Z" duration-ms="5168" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[The following asserts failed:
-	Response Time validation failed expected [true] but found [false]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-VVR08CM', ip: '192.168.29.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45feaab14cc40d5c7ea7578d4ea71fef, clickElement {id=19a634f2-086d-4136-bebb-025bed384482}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53333}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53333/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (45feaab14cc40d5c7ea7578d4ea71fef)] -> xpath: //a[@id='nav-hamburger-menu']]
+Session ID: 45feaab14cc40d5c7ea7578d4ea71fef]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-	Response Time validation failed expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at tests.APIAutomationTest.Test2(APIAutomationTest.java:41)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-VVR08CM', ip: '192.168.29.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45feaab14cc40d5c7ea7578d4ea71fef, clickElement {id=19a634f2-086d-4136-bebb-025bed384482}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53333}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53333/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (45feaab14cc40d5c7ea7578d4ea71fef)] -> xpath: //a[@id='nav-hamburger-menu']]
+Session ID: 45feaab14cc40d5c7ea7578d4ea71fef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.ch.project.helpers.UIHelper.clickOnElement(UIHelper.java:13)
+	at com.ch.project.pages.AmazonHomePage.clickOnHamsurburgMenu(AmazonHomePage.java:41)
+	at tests.WebAutomationTest.UI_Test(WebAutomationTest.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,64 +85,22 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method signature="Test2(java.lang.String, java.lang.String)[pri:0, instance:tests.APIAutomationTest@7efaad5a]" started-at="2022-04-03T22:52:33Z" name="Test2" data-provider="userData" finished-at="2022-04-03T22:52:33Z" duration-ms="437" status="FAIL">
+        </test-method> <!-- UI_Test -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.WebAutomationTest@341672e]" started-at="2022-04-04T19:39:29Z" name="tearDown" finished-at="2022-04-04T19:39:30Z" duration-ms="787" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ronaldo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[player]]>
+                <![CDATA[[TestResult name=UI_Test status=FAILURE method=WebAutomationTest.UI_Test()[pri:0, instance:tests.WebAutomationTest@341672e] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-	Response Time validation failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-	Response Time validation failed expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at tests.APIAutomationTest.Test2(APIAutomationTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-      </class> <!-- tests.APIAutomationTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WebAutomationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

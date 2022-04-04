@@ -4,11 +4,11 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import com.ch.project.pojos.JSONSuccessResponse;
+import com.ch.project.utils.ConfigFileReader;
 
 import io.restassured.http.Headers;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
-import io.restassured.response.Validatable;
 import io.restassured.response.ValidatableResponse;
 
 public class APIHelper {
@@ -51,7 +51,16 @@ public class APIHelper {
 	
 	public static void verifyResponseSchema(ValidatableResponse validatableResponse) {
 		
-		validatableResponse.assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File(".\\src\\test\\resources\\APIResponseSchema.json")));	
+		ConfigFileReader configs = new ConfigFileReader();
+		
+		String browser = System.getProperty("browser", configs.getDefaultBrowser());
+		
+		if(browser.equals("remoteChrome")) {
+			validatableResponse.assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File(configs.getRemoteAPIResponseSchemaPath())));
+		}
+		else if(browser.equals("localChrome")) {
+			validatableResponse.assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File(configs.getAPIResponseSchemaPath())));	
+		}
 	
 	}
 

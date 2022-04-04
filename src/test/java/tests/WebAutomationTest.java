@@ -2,24 +2,24 @@ package tests;
 
 import java.util.Set;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ch.project.base.BaseClass;
 import com.ch.project.pages.AmazonHomePage;
 import com.ch.project.pages.AmazonResultsPage;
-import com.ch.project.utils.ConfigFileReader;
+import com.ch.project.utils.TestNGListenerUtil;
 
 
+@Listeners(TestNGListenerUtil.class)
 public class WebAutomationTest extends BaseClass {
 	
 	WebDriver driver;
 	
-	@Test
-	public void UI_Test() throws InterruptedException {
-		
-		System.out.println("------------------ UI Test Started -----------------");
+	
+	@Test	
+	public void UI_Test() {
 		
 		this.driver = baseDriver;
 		
@@ -52,8 +52,6 @@ public class WebAutomationTest extends BaseClass {
 		}
 		
 		resultsPage.printItemDescription();
-	
-		System.out.println("------------------ UI Test Completed -----------------");
 	}
 	
 }

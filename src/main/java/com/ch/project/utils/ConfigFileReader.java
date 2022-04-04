@@ -9,9 +9,27 @@ import java.util.Properties;
 public class ConfigFileReader {
 	
 	Properties properties;
-	String filePath = ".\\src\\test\\resources\\Configuration.properties";
+	
+	String defaultBrowser = "localChrome";
+	
+	String filePath;	
+	
 	
 	public ConfigFileReader() {
+		
+		String browser = System.getProperty("browser", defaultBrowser);
+		
+		if(browser.equals("localChrome")) {
+			filePath = "src/test/resources/Configuration.properties";
+		}
+		
+		else if(browser.equals("remoteChrome")) {
+			filePath = "/home/CHTest/src/test/resources/Configuration.properties";
+		}
+		
+		
+		System.out.println("FilePath -> "+filePath);
+		
 		
 		BufferedReader reader;
 		try {
@@ -41,6 +59,31 @@ public class ConfigFileReader {
 	public String getDefaultBrowser() {
 		String browser = properties.getProperty("defaultBrowser");
 		return browser;
+	}
+	
+	public String getScreenshotFolderPath() {
+		String screenshotsFolderPath = properties.getProperty("screenshotsFolder");
+		return screenshotsFolderPath;
+	}
+	
+	public String getRemoteScreenshotFolderPath() {
+		String screenshotsFolderPath = properties.getProperty("remote_screenshotsFolder");
+		return screenshotsFolderPath;
+	}
+	
+	public String getRemoteChromeUrl() {
+		String remoteUrl = properties.getProperty("remote_url_chrome");
+		return remoteUrl;
+	}
+	
+	public String getAPIResponseSchemaPath() {
+		String remoteUrl = properties.getProperty("apiResponseSchemaPath");
+		return remoteUrl;
+	}
+	
+	public String getRemoteAPIResponseSchemaPath() {
+		String remoteUrl = properties.getProperty("remote_apiResponseSchemaPath");
+		return remoteUrl;
 	}
 
 }

@@ -1,0 +1,72 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Suite",
+    "children" : [ {
+      "name" : "Test",
+      "children" : [ {
+        "name" : "tests.WebAutomationTest",
+        "children" : [ {
+          "name" : "UI_Test",
+          "uid" : "315e38cca3753e65",
+          "parentUid" : "a138447111b01453c74ba88f960b080d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649082818258,
+            "stop" : 1649082833649,
+            "duration" : 15391
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a138447111b01453c74ba88f960b080d"
+      }, {
+        "name" : "tests.APIAutomationTest",
+        "children" : [ {
+          "name" : "API_Test",
+          "uid" : "cef2e4fb3dfcb71f",
+          "parentUid" : "c99879926dbd7cf0d6b6237ab943c908",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649082834141,
+            "stop" : 1649082838031,
+            "duration" : 3890
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "admin", "admin" ]
+        }, {
+          "name" : "API_Test",
+          "uid" : "bbab0973b7afe47",
+          "parentUid" : "c99879926dbd7cf0d6b6237ab943c908",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649082838037,
+            "stop" : 1649082838470,
+            "duration" : 433
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "ronaldo", "player" ]
+        } ],
+        "uid" : "c99879926dbd7cf0d6b6237ab943c908"
+      } ],
+      "uid" : "7314231e84d67a341867b5c9d3f928d2"
+    } ],
+    "uid" : "29f4dcc45a0e26cd7c7462063cee854b"
+  } ]
+}

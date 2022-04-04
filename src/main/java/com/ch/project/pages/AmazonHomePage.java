@@ -42,10 +42,12 @@ public class AmazonHomePage {
 	}
 	
 	public void clickOnTVAppliancesElectronics() {
+		wait.until(ExpectedConditions.visibilityOf(tvAppliancesElectronicsFilter));
 		UIHelper.clickOnElement(tvAppliancesElectronicsFilter);
 	}
 	
 	public void clickOnTelevisions() {
+		wait.until(ExpectedConditions.visibilityOf(televisionsFilter));
 		UIHelper.clickOnElement(televisionsFilter);
 	}
 	
@@ -53,9 +55,6 @@ public class AmazonHomePage {
 		wait.until(ExpectedConditions.visibilityOf(samsungCheckBox));
 		UIHelper.clickOnElement(samsungCheckBox);
 	}
-	
-	
-	
 	
 	
 }

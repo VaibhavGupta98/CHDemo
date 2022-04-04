@@ -1,0 +1,119 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-VVR08CM",
+    "children" : [ {
+      "name" : "25372@DESKTOP-VVR08CM.main(1)",
+      "children" : [ {
+        "name" : "UI_Test",
+        "uid" : "1705b2858c0e4083",
+        "parentUid" : "5729874a41cb1047b32f2a106c45717a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082497379,
+          "stop" : 1649082513860,
+          "duration" : 16481
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API_Test",
+        "uid" : "7fd2427d848e3484",
+        "parentUid" : "5729874a41cb1047b32f2a106c45717a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082519579,
+          "stop" : 1649082519976,
+          "duration" : 397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "ronaldo", "player" ]
+      }, {
+        "name" : "API_Test",
+        "uid" : "74b1140ef4f596d3",
+        "parentUid" : "5729874a41cb1047b32f2a106c45717a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082514420,
+          "stop" : 1649082519572,
+          "duration" : 5152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "admin", "admin" ]
+      } ],
+      "uid" : "5729874a41cb1047b32f2a106c45717a"
+    }, {
+      "name" : "25852@DESKTOP-VVR08CM.main(1)",
+      "children" : [ {
+        "name" : "UI_Test",
+        "uid" : "315e38cca3753e65",
+        "parentUid" : "707ad265729b7b07ebc22d1ab4f45f54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082818258,
+          "stop" : 1649082833649,
+          "duration" : 15391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API_Test",
+        "uid" : "bbab0973b7afe47",
+        "parentUid" : "707ad265729b7b07ebc22d1ab4f45f54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082838037,
+          "stop" : 1649082838470,
+          "duration" : 433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "ronaldo", "player" ]
+      }, {
+        "name" : "API_Test",
+        "uid" : "cef2e4fb3dfcb71f",
+        "parentUid" : "707ad265729b7b07ebc22d1ab4f45f54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649082834141,
+          "stop" : 1649082838031,
+          "duration" : 3890
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "admin", "admin" ]
+      } ],
+      "uid" : "707ad265729b7b07ebc22d1ab4f45f54"
+    } ],
+    "uid" : "2f2dc790778273c598f3513c4a7fcf6f"
+  } ]
+}

@@ -1,0 +1,96 @@
+{
+  "uid" : "1705b2858c0e4083",
+  "name" : "UI_Test",
+  "fullName" : "tests.WebAutomationTest.UI_Test",
+  "historyId" : "5bc7be559b2f4f3f0f3d4acf455b7d1e",
+  "time" : {
+    "start" : 1649082497379,
+    "stop" : 1649082513860,
+    "duration" : 16481
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1649082493867,
+      "stop" : 1649082497313,
+      "duration" : 3446
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1649082514039,
+      "stop" : 1649082514397,
+      "duration" : 358
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.WebAutomationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.WebAutomationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "UI_Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.WebAutomationTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-VVR08CM"
+  }, {
+    "name" : "thread",
+    "value" : "25372@DESKTOP-VVR08CM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1705b2858c0e4083.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,96 @@
+{
+  "uid" : "bbab0973b7afe47",
+  "name" : "API_Test",
+  "fullName" : "tests.APIAutomationTest.API_Test",
+  "historyId" : "14ec1449a6a0610d18587194445d88b1",
+  "time" : {
+    "start" : 1649082838037,
+    "stop" : 1649082838470,
+    "duration" : 433
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1649082815048,
+      "stop" : 1649082818190,
+      "duration" : 3142
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.APIAutomationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.APIAutomationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "API_Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.APIAutomationTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-VVR08CM"
+  }, {
+    "name" : "thread",
+    "value" : "25852@DESKTOP-VVR08CM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ronaldo"
+  }, {
+    "name" : "arg1",
+    "value" : "player"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7fd2427d848e3484",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649082519579,
+        "stop" : 1649082519976,
+        "duration" : 397
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bbab0973b7afe47.json",
+  "parameterValues" : [ "ronaldo", "player" ]
+}

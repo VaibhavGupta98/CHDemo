@@ -20,7 +20,7 @@ public class AmazonResultsPage {
 	
 	Wait<WebDriver> wait;
 	
-	@FindBy(xpath = "//span[@class='a-dropdown-container']")
+	@FindBy(xpath = "//span[@class='a-dropdown-container']//span[contains(@class,'a-button-dropdown')]")
 	private WebElement sortResultsDropdown;
 	
 	@FindBy(xpath = "//div[@class='a-popover-wrapper']//a[contains(text(),'High to Low')]")
@@ -48,6 +48,7 @@ public class AmazonResultsPage {
 	}
 	
 	public void clickOnHighToLowOptionInDropdown() {
+		wait.until(ExpectedConditions.visibilityOf(highToLowDropdownValue));
 		UIHelper.clickOnElement(highToLowDropdownValue);
 	}
 	
@@ -61,7 +62,7 @@ public class AmazonResultsPage {
 		clickOnHighToLowOptionInDropdown();
 	}
 	
-	public void printItemDescription() throws InterruptedException {
+	public void printItemDescription() {
 		
 		System.out.println(UIHelper.getElementText(descriptionHeaderText));
 		
