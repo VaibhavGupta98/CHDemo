@@ -20,7 +20,7 @@ public class AmazonResultsPage {
 	
 	Wait<WebDriver> wait;
 	
-	@FindBy(xpath = "//span[@class='a-dropdown-container']//span[contains(@class,'a-button-dropdown')]")
+	@FindBy(xpath = "//span[@class='a-dropdown-container']//span[contains(@class,'a-button-dropdown')]//span[contains(@class,'a-button-text')]")
 	private WebElement sortResultsDropdown;
 	
 	@FindBy(xpath = "//div[@class='a-popover-wrapper']//a[contains(text(),'High to Low')]")
@@ -43,7 +43,7 @@ public class AmazonResultsPage {
 	}
 	
 	public void clickOnSortResultsByPriceDropdown() {
-		wait.until(ExpectedConditions.visibilityOf(sortResultsDropdown));
+		wait.until(ExpectedConditions.elementToBeClickable(sortResultsDropdown));
 		UIHelper.clickOnElement(sortResultsDropdown);
 	}
 	
